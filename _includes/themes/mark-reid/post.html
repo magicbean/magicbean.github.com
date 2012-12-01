@@ -5,7 +5,7 @@
   {{ content }}
 
   <address class="signature">
-    <a class="author" href="{{ HOME_PATH }}">Main_page</a> 
+    <a class="author" href="{{ HOME_PATH }}">Home</a> 
     <span class="date">{{ page.date | date_to_long_string }}</span>
     <span class="location">{{ page.location }}</span>
   </address>
@@ -18,13 +18,12 @@
     <a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}">&larr; Earlier Post</a>
   {% endif %}
   </div>
-
-
-  <!-- UY BEGIN -->
-   <div id="uyan_frame"></div>
-   <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1715789" async=""></script>
-  <!-- UY END -->
   
 </div><!-- End Page -->
+
+<!-- UY BEGIN -->
+   <div id="uyan_frame"></div>
+   <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1715789" async=""></script>
+<!-- UY END -->
 
 

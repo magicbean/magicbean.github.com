@@ -1,4 +1,5 @@
 # A simple way to inspect liquid template variables.
+# Hello World
 # Usage:
 #  Can be used anywhere liquid syntax is parsed (templates, includes, posts/pages)
 #  {{ site | debug }}

@@ -7,7 +7,6 @@ auto: true
 markdown: rdiscount
 pygments: true
 paginate: 20
-baseurl: /
 url: "http://localhost:4000"
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.

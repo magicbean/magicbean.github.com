@@ -2,7 +2,6 @@
 title: Links
 layout: default
 ---
-<h1><a href="/links">About Me</a></h1>
 <ul class="xoxo blogroll">
 <li><a href="http://dbahacker.com/" title="TB 杨德华" target="_blank">DBA Hacker</a></li>
 <li><a href="http://www.nginxs.com/" target="_blank">eric</a></li>

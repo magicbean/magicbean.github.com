@@ -4,6 +4,9 @@ layout: default
 ---
 
 <p>
+
+</p>
+<p>
   网名: magicbean，中文名: 王孝明, English Name: NoNoNo？
 <p>
 </p>

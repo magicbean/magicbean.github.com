@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html>
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }}</title>
@@ -27,30 +27,66 @@
    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/screen.css" type="text/css" />
 
 </head>
-<body id="{{ page.section }}">
-<div id="site">
-  
-  <div id="header">
-    <h1>
-    	<a href="{{ HOME_PATH }}" title="{{ site.title }}">{{ site.title }}</a>
-    </h1>
-    <ul class="nav">
-      <li><a class="home" href="{{ HOME_PATH }}">Home</a></li>
-      <li><a href="/about">About Me</a></li>
-      <li><a href="/links">Friends</a></li>
-      <li><a href="/projects">Progamming</a></li>
-    </ul>
-  </div>
+<body class="{{ page.layout }}">
 
-  {{ content }}
-  
-  <div id="footer">
-  	<p class="copyright">
-            &copy;2012 &ndash; magicbean@github pages
-    </p>
-  </div>
-  
-</div>
+    <section id="main">
+
+      <section id="masthead" class="group">
+        <header class="group">
+          <p><a href="/">走在漆黑的小路上</a></p>
+        <nav id="site">
+          <ul>
+            <li><a href="/">Main Page</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/links">Friends</a></li>
+            <li><a href="/projects">Learning</a></li>
+          </ul>
+        </nav>
+        </header>
+      </section>
+
+      <section id="focus" class="group">
+
+        <section id="content" class="group">
+          {{ content }}
+        </section>
+
+        <section id="sidebar">
+
+          <section id="meta-col1" class="meta group">
+
+          {% if page.title %}  
+            <aside>
+              <header>
+                <h3>Relate_Art</h3>
+              </header>
+              <ul id="relate_blog">
+                {% for post in site.related_posts limit:9 %}
+                  <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+             </ul>
+            </aside>
+          {% endif %}
+
+            <aside>
+              <nav>
+                  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=2&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1035836154&verifier=a26926d5&dpc=1"></iframe>
+              </nav>
+            </aside>
+
+          </section>
+        </section>
+      </section>
+
+      <section id="footer" class="group">
+        <footer class="group">
+          <p class="copyright">
+            &copy;2012 &ndash; megicbean@github pages
+          </p>
+        </footer>
+      </section>
+
+    </section>
 
 <!--[if IE 6]>
 <script type="text/javascript"> 
@@ -62,6 +98,5 @@
 <script type="text/javascript" src="http://static.ie6update.com/hosted/ie6update/ie6update.js"></script>
 <![endif]-->
 
-  {% include JB/analytics %}
 </body>
 </html>

@@ -9,17 +9,6 @@
 
    <link rel="start" href="{{ HOME_PATH }}" />
 
-	{% if page.keywords %}
-	<meta name="keywords" content="{{ page.keywords }}">
-	{% endif %}
-	
-	{% if site.author.feedburner %}
-  	<link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/{{ site.author.feedburner }}" title="RSS feed" />
-	{% endif %}
-	{% if page.feed %}
-  	<link rel="alternate" type="application/atom+xml" href="{{ page.feed }}" title="RSS feed" />
-	{% endif %}
-
    <!-- syntax highlighting CSS -->
    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/syntax.css" type="text/css" />
 
@@ -27,66 +16,32 @@
    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/screen.css" type="text/css" />
 
 </head>
-<body class="{{ page.layout }}">
+<body id="{{ page.layout }}">
+<div id="site">
+  
+  <div id="header">
+    <h1>
+    	<a href="{{ HOME_PATH }}" title="{{ site.title }}">{{ site.title }}</a>
+    </h1>
+    <ul class="nav">
+      <li><a class="home" href="{{ HOME_PATH }}">Home</a></li>
+      <li><a href="/about">About Me</a></li>
+      <li><a href="/links">Friends</a></li>
+      <li><a href="/projects">Progamming</a></li>
+    </ul>
+  </div>
 
-    <section id="main">
-
-      <section id="masthead" class="group">
-        <header class="group">
-          <p><a href="/">走在漆黑的小路上</a></p>
-        <nav id="site">
-          <ul>
-            <li><a href="/">Main Page</a></li>
-            <li><a href="/about">About Me</a></li>
-            <li><a href="/links">Friends</a></li>
-            <li><a href="/projects">Learning</a></li>
-          </ul>
-        </nav>
-        </header>
-      </section>
-
-      <section id="focus" class="group">
-
-        <section id="content" class="group">
-          {{ content }}
-        </section>
-
-        <section id="sidebar">
-
-          <section id="meta-col1" class="meta group">
-
-          {% if page.title %}  
-            <aside>
-              <header>
-                <h3>Relate_Art</h3>
-              </header>
-              <ul id="relate_blog">
-                {% for post in site.related_posts limit:9 %}
-                  <li> <a href="{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-             </ul>
-            </aside>
-          {% endif %}
-
-            <aside>
-              <nav>
-                  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=2&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1035836154&verifier=a26926d5&dpc=1"></iframe>
-              </nav>
-            </aside>
-
-          </section>
-        </section>
-      </section>
-
-      <section id="footer" class="group">
+  {{ content }}
+  
+  <section id="footer" class="group">
         <footer class="group">
           <p class="copyright">
-            &copy;2012 &ndash; megicbean@github pages
+            &copy;2012 &ndash; magicbean@github pages
           </p>
         </footer>
-      </section>
-
-    </section>
+  </section>
+  
+</div>
 
 <!--[if IE 6]>
 <script type="text/javascript"> 

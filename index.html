@@ -12,7 +12,7 @@ layout: default
   <nav id="pagination">
     <ol>
           {% if paginator.previous_page and paginator.previous_page == "1" %}
-      <li><a href="/">&lt;&lt; 上一页</a> ::</li>
+      <li><a href="/">&lt;&lt; Previous Page</a> ::</li>
     {% elsif paginator.previous_page %}
       <li><a href="/page{{ paginator.previous_page }}">&lt;&lt; Previous Page</a> ::</li>
     {% endif %}

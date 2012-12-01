@@ -5,9 +5,9 @@ title: "Perl Socket Tutorial"
 
 ## Perl socket programming tutorial
 ### Socket programming in perl can be done using the low level socket functions or the IO::Socket module.The IO::Socket module provides an object-oriented interface to the socket functions.
-     In this tutorial we are going to use the low level socket functions.
+In this tutorial we are going to use the low level socket functions.
 
-### Example 1：连接百度端口80
+### Example 1：Connecting the baidu server with port 80
 
 ### Perl code
 
@@ -193,7 +193,8 @@ bind(SERVER,$paddr) or die "bind failed:$!\n";
 # listening the incoming connections
 listen(SERVER,10);
 print "Server is now listening...\n";
-# After calling listen,the socket is ready to accept incoming connections using the accept function. This shall be done in a loop so that the program can accept connections again and again.
+# After calling listen,the socket is ready to accept incoming connections using the accept function. 
+This shall be done in a loop so that the program can accept connections again and again.
 
 #accept incoming connections and talt to clients
 while(1) {
@@ -212,7 +213,7 @@ exit(0);
 {% endhighlight %}
 
 
-### Adanced Skills:
+### Advanced Skills:
 
 Asynchronouse I/O
 Multiple clients can be handled by asynchronous event driven I/O. IO::Select can be used for this.
@@ -315,6 +316,7 @@ Hello client[dou.perl.gov]! Nice to meet you !
 
 ### Some other messages from the test.
 
+{% highlight bash %}
 客户端开始发送信息：
 ls---->send
 OK : ls ---->receive
@@ -326,7 +328,7 @@ OK : hello world ---->receive
 Received -- ls
 Received -- hello
 Received -- hello world
-
+{% endhighlight %}
 
 ### The final example:
 

@@ -17,7 +17,6 @@ layout: default
 <li><a href="http://serverfault.com/" title="stackexchange下属的系统工程师问答网站" target="_blank">serverfault</a></li>
 <li><a href="http://zauc.wordpress.com/" target="_blank">Timo</a></li>
 <li><a href="http://julyclyde.org/" title="新浪系统工程师">七月的夏天</a></li>
-<li><a href="http://www.liurongxing.com/">刘荣星</a></li>
 <li><a href="http://blog.s135.com/" title="金山·张宴" target="_blank">回忆未来</a></li>
 <li><a href="http://blog.ops.tudou.com/wp/" target="_blank">土豆运营团队</a></li>
 <li><a href="http://www.91tuanfang.com/" title="安居客运维" target="_blank">家欣的天空</a></li>
@@ -31,4 +30,5 @@ layout: default
 <li><a href="http://log.heartoutside.com/" title="HeartOutSide" target="_blank">HeartOutside</a></li>
 <li><a href="http://blog.liulantao.com/" title="lax" target="_blank">Lax</a></li>
 <li><a href="http://l09.me/" title="风声" target="_blank">风声</a></li>
+<li><a href="http://chenlinux.com/" title="三斗室" target="_blank">大师兄</a></li>
 </ul>

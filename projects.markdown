@@ -1,7 +1,8 @@
 ---
-layout: default
 title: Projects
+layout: default
 ---
+<h1><a href="/projects">About Me</a></h1>
 <div class="row">
 之前经常看到一些稀奇古怪又很好玩的东西，转头就忘了，从今天开始，在这里记录一些工作用得上用不上能用得上不用用得上的名词，免得以后再忘了~~不定期更新。<br />
 2012-10-06<br />

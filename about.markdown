@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Me
 layout: default
 ---
 <h1><a href="/about">About Me</a></h1>

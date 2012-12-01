@@ -2,7 +2,10 @@
 title: About Me
 layout: default
 ---
-<h1><a href="/about">About Me</a></h1>
+
+<p>
+
+</p>
 <p>
   网名: magicbean，中文名: 王孝明, English Name: NoNoNo？
 <p>

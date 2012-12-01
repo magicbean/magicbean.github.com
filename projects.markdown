@@ -12,8 +12,6 @@ RRDTOOL implementation of Aberrant Behavior Detection: 一个RRD的异常预警p
 node-perl: node.js的embed perl工具，详见<a href="https://github.com/hideo55/node-perl">https://github.com/hideo55/node-perl</a>，同理还有MyPerl和apache/nginx的embedded perl模块。<br />
 fpm: 全名是Effing Package Management，我汗==!详见<a href="https://github.com/jordansissel/fpm">https://github.com/jordansissel/fpm</a><br />
 ubic: perl的服务进程托管工具，详见<a href="https://metacpan.org/module/ubic">https://metacpan.org/module/ubic</a><br />
-2012-03-16<br />
-logstash：开源的集中式日志收集和分析展示平台，使用JRuby编写，结合了Lucene，RabbitMQ，NodeJS等多种开源项目。详见<a href="http://logstash.net">http://logstash.net</a><br />
 2011-11-14<br />
 convirt：开源的xen集群管理平台，详见<a href="http://www.convirture.com">http://www.convirture.com</a><br />
 ganeti：开源的xen/kvm集群管理平台，详见<a href="http://code.google.com/p/ganeti">http://code.google.com/p/ganeti</a><br />
@@ -23,9 +21,6 @@ OpenNebula：开源的xen/kvm/vmware集群管理平台，详见<a href="http://w
 dnsdusty：perl写的bind9页面配置程序，详见<a href="https://fedorahosted.org/dnsdusty/">https://fedorahosted.org/dnsdusty</a><br />
 nictool：perl写的bind和tinydns页面配置程序，详见<a href="http://www.nictool.com">http://www.nictool.com</a><br />
 JMX::Jmx4Perl：perl的jmx接口，读取java状态。<br />
-<hr />
-2011-4-20<br />
-ipmitool：通过ipmi协议远程控制服务器bmc芯片，详见<a href="http://www.ibm.com/developerworks/cn/linux/l-ipmi/">http://www.ibm.com/developerworks/cn/linux/l-ipmi/</a><br />
 <hr />
 2011-4-13<br />
 perl的DB_File模块和tie的使用<br />
@@ -48,9 +43,6 @@ SNMP企业代码：<a href="http://www.iana.org/assignments/enterprise-numbers">
 <a href="http://www.redbooks.ibm.com/redpapers/pdfs/redp3861.pdf">http://www.redbooks.ibm.com/redpapers/pdfs/redp3861.pdf</a><br />
 <a href="http://www.redbooks.ibm.com/redpapers/pdfs/redp4285.pdf">http://www.redbooks.ibm.com/redpapers/pdfs/redp4285.pdf</a><br />
 一个明确说的是redhat，但版本及其老，五年前就没更新了。另一个概述linux，08年更新。<br />
-<hr />
-2011-1-28<br />
-xen的P2V迁移。<br />
 <hr />
 2011-1-12<br />
 DRBD：分布式块设备复制软件。官网：<a href="http://www.drbd.org/">http://www.drbd.org</a><br />

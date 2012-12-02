@@ -7,7 +7,7 @@ layout: default
 
 </p>
 <p>
-  网名: magicbean，中文名: 王孝明, English Name: NoNoNo？
+  网名: magicbean
 <p>
 </p>
   编程轨迹：Bash -> Perl

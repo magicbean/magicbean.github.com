@@ -16,7 +16,7 @@ layout: default
   微博: appdou
 </p>
 <p>
-  QQ: 1079853969
+  QQ: 2402539045
 </p>
 
 

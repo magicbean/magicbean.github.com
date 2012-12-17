@@ -339,16 +339,27 @@ command 3>&1 1>&2 2>&3 3>&-
 ## 21：histroy设置
 ### 示例：
 取消记录历史命令：
+
 unset HISTFILE
+
 HISTFILE变量定义了历史命令的存储地。
+
 或者可以使用如下方法：
+
 HISTFILE=/dev/null
+
 设置历史命令时间格式：
+
 HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+
 忽略重复行：
+
 HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
+
 export HISTTIMEFORMAT="%F %T `whoami` "
+
 计算history命令使用最多的前10个：
+
 {% highlight bash %}
 [root@web-db bash]# history
     1  2012-12-10 10:09:48 root > ~/.bash_history
@@ -387,11 +398,17 @@ export HISTTIMEFORMAT="%F %T `whoami` "
 ## 24：ssh跳板
 ### 示例：
 ssh -t reachable_host ssh unreachable_host
+
 解说：
+
 该命令通过reachable_host创建了一个到unreachable_host的ssh连接。通过在reachable_host上
+
 执行ssh unreachable_host，-t强制ssh分配一个pseudo-tty（伪终端），该终端是ssh到
+
 unreachable_host进行交互所必须的。
+
 跳板可以有多个：
+
 ssh -t host1 ssh -t host2 ssh -t host ssh -t host4 ...
 
 ## 25:ssh创建tunnel
@@ -452,15 +469,25 @@ sunrpc                           /var/lib/nfs/rpc_pipefs   rpc_pipefs   (rw)
 
 ## 27：使用wget下载网站
 ### wget --random-wait -r -p -e robots=off -U Mozilla www.baidu.com
+
 --random-wait - wait between 0.5 to 1.5 seconds between requests.
+
 -r - turn on recursive retrieving.
+
 -e robots=off - ignore robots.txt.
+
 -U Mozilla - set the "User-Agent" header to "Mozilla". 
+
 Though a better choice is a real User-Agent like "Mozilla/4.0 
+
 (compatible; MSIE 7.0; Windows NT 6.1; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729)".
+
 --limit-rate=20k - limits download speed to 20kbps.
+
 -o logfile.txt - log the downloads.
+
 -l 0 - remove recursion depth (which is 5 by default).
+
 --wait=1h - be sneaky, download one file every hour.
 
 ## 28：创建并挂载一个临时的ram分区
